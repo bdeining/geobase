@@ -37,6 +37,7 @@
             <artifactId>jaxb2-basics-runtime</artifactId>
             <version>${jvnet-jaxb2.version}</version>
         </dependency>
+
         <dependency>
             <groupId>org.jvnet.ogc</groupId>
             <artifactId>gml-v_3_2_1</artifactId>
