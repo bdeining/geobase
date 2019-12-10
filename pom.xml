@@ -22,6 +22,7 @@
         <maven-source-plugin.version>3.0.1</maven-source-plugin.version>
         <jvnet.version>2.6.1</jvnet.version>
         <jvnet-jaxb2.version>1.11.1</jvnet-jaxb2.version>
+        <jvnet-annotation.version>1.1.0</jvnet-annotation.version>
         <xlink.version>1.4.0</xlink.version>
         <jaxb-impl.version>2.2.11</jaxb-impl.version>
     </properties>
