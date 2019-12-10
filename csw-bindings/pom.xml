@@ -99,11 +99,9 @@
                                     <version>${jvnet.jaxb2.version}</version>
                                 </plugin>
                                 <plugin>
-                                    <plugin>
-                                        <groupId>org.jvnet.jaxb2_commons</groupId>
-                                        <artifactId>jaxb2-basics-annotate</artifactId>
-                                        <version>${jvnet-annotation.version}</version>
-                                    </plugin>
+                                    <groupId>org.jvnet.jaxb2_commons</groupId>
+                                    <artifactId>jaxb2-basics-annotate</artifactId>
+                                    <version>${jvnet-annotation.version}</version>
                                 </plugin>
                             </plugins>
                             <episodes>
