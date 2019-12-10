@@ -8,15 +8,25 @@
     <groupId>com.bdeining</groupId>
     <artifactId>geobase</artifactId>
     <version>0.1-SNAPSHOT</version>
-    <packaging>jar</packaging>
+    <packaging>pom</packaging>
 
-    <dependencies>
-        <dependency>
-            <groupId>com.bladejava</groupId>
-            <artifactId>blade-mvc</artifactId>
-            <version>2.0.15.BETA</version>
-        </dependency>
-    </dependencies>
+
+    <modules>
+        <module>csw-bindings</module>
+        <module>rest</module>
+    </modules>
+
+
+    <properties>
+        <maven-jaxb2-plugin.version>0.14.0</maven-jaxb2-plugin.version>
+        <jaxb.version>2.3.2</jaxb.version>
+        <jvnet.jaxb2.version>1.11.1</jvnet.jaxb2.version>
+        <maven-source-plugin.version>3.0.1</maven-source-plugin.version>
+
+    </properties>
+
+
+
 
     <build>
         <plugins>
