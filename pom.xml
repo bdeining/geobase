@@ -10,28 +10,24 @@
     <version>0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
 
-
     <modules>
         <module>csw-bindings</module>
         <module>rest</module>
     </modules>
-
 
     <properties>
         <maven-jaxb2-plugin.version>0.14.0</maven-jaxb2-plugin.version>
         <jaxb.version>2.3.2</jaxb.version>
         <jvnet.jaxb2.version>1.11.1</jvnet.jaxb2.version>
         <maven-source-plugin.version>3.0.1</maven-source-plugin.version>
-
+        <jvnet.version>2.6.1</jvnet.version>
+        <jvnet-jaxb2.version>1.11.1</jvnet-jaxb2.version>
+        <xlink.version>1.4.0</xlink.version>
+        <jaxb-impl.version>2.2.11</jaxb-impl.version>
     </properties>
-
-
-
 
     <build>
         <plugins>
-
-
             <plugin>
                 <groupId>com.coveo</groupId>
                 <artifactId>fmt-maven-plugin</artifactId>
