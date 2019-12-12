@@ -1,10 +1,14 @@
-package src.main.java.com.bdeining.hbase.rest;
+package com.bdeining.hbase.rest;
 
 import com.blade.Blade;
 
 public class RestEndpoint {
 
   private static GetCapabilitesHandler getCapabilitesHandler = new GetCapabilitesHandler();
+  private static GetRecordsHandler getRecordsHandler = new GetRecordsHandler();
+
+  // service=CSW&version=2.0.2&
+
 
   public static void main(String[] args) {
     Blade.of()
@@ -16,8 +20,11 @@ public class RestEndpoint {
               String request = ctx.query("request");
 
               switch (request) {
-                case "get":
+                case "GetCapabilities":
                   getCapabilitesHandler.handle(ctx);
+                  break;
+                case "GetRecords":
+                  getRecordsHandler.handle(ctx);
                   break;
               }
             })
