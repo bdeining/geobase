@@ -9,7 +9,6 @@ public class RestEndpoint {
 
   // service=CSW&version=2.0.2&
 
-
   public static void main(String[] args) {
     Blade.of()
         .get(

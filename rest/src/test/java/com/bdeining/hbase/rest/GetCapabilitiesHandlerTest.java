@@ -8,17 +8,15 @@ import org.junit.Test;
 
 public class GetCapabilitiesHandlerTest {
 
-    private GetCapabilitesHandler getCapabilitesHandler;
+  private GetCapabilitesHandler getCapabilitesHandler;
 
-    @Before
-    public void setUp() {
-        getCapabilitesHandler = new GetCapabilitesHandler();
+  @Before
+  public void setUp() {
+    getCapabilitesHandler = new GetCapabilitesHandler();
+  }
 
-    }
-
-    @Test
-    public void testHandle() {
-        getCapabilitesHandler.handle(mock(RouteContext.class));
-    }
-
+  @Test
+  public void testHandle() {
+    getCapabilitesHandler.handle(mock(RouteContext.class));
+  }
 }

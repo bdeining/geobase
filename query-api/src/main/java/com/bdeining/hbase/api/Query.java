@@ -4,6 +4,5 @@ import net.opengis.csw.v_3_0.RecordType;
 
 public interface Query {
 
-    RecordType getRecordById(String id);
-
+  RecordType getRecordById(String id);
 }
