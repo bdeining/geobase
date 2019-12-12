@@ -11,31 +11,17 @@
     </parent>
 
     <groupId>com.bdeining.geobase</groupId>
-    <artifactId>rest</artifactId>
+    <artifactId>query-api</artifactId>
     <packaging>jar</packaging>
 
-    <name>GeoBase :: REST</name>
+    <name>GeoBase :: Query API</name>
 
     <dependencies>
-        <dependency>
-            <groupId>com.bladejava</groupId>
-            <artifactId>blade-mvc</artifactId>
-            <version>2.0.15.BETA</version>
-        </dependency>
+
         <dependency>
             <groupId>com.bdeining.geobase</groupId>
             <artifactId>csw-bindings</artifactId>
             <version>${project.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.bdeining.geobase</groupId>
-            <artifactId>query-api</artifactId>
-            <version>${project.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.google.code.gson</groupId>
-            <artifactId>gson</artifactId>
-            <version>${gson.version}</version>
         </dependency>
     </dependencies>
 
