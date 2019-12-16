@@ -37,6 +37,11 @@
             <artifactId>gson</artifactId>
             <version>${gson.version}</version>
         </dependency>
+        <dependency>
+            <groupId>com.bdeining.geobase</groupId>
+            <artifactId>parser</artifactId>
+            <version>${project.version}</version>
+        </dependency>
     </dependencies>
 
     <build>
