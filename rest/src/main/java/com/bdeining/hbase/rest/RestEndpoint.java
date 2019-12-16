@@ -1,4 +1,4 @@
-package src.main.java.com.bdeining.hbase.rest;
+package com.bdeining.hbase.rest;
 
 import com.blade.Blade;
 import com.blade.mvc.RouteContext;
@@ -12,25 +12,6 @@ public class RestEndpoint {
   private static final List<String> SUPPORTED_VERSION = Arrays.asList("2.0.2");
 
   private static GetCapabilitesHandler getCapabilitesHandler = new GetCapabilitesHandler();
-<<<<<<< Updated upstream
-
-  public static void main(String[] args) {
-    Blade.of()
-        .get(
-            "/",
-            ctx -> {
-              String service = ctx.query("service");
-              String version = ctx.query("version");
-              String request = ctx.query("request");
-
-              switch (request) {
-                case "get":
-                  getCapabilitesHandler.handle(ctx);
-                  break;
-              }
-            })
-        .start();
-=======
 
   private static GetRecordsHandler getRecordsHandler = new GetRecordsHandler();
 
@@ -71,6 +52,5 @@ public class RestEndpoint {
 
   public static void main(String[] args) {
     Blade.of().get("/", RestEndpoint::handleRequest).start();
->>>>>>> Stashed changes
   }
 }
